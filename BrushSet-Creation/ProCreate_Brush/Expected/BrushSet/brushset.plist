@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>brushes</key>
+	<array>
+		<string>1B47313A-17EA-45B8-830C-C910FF1E1601</string>
+		<string>1B45948A-4D12-4D3D-8C49-C9833922F208</string>
+		<string>9BB1E72D-A2D3-47F4-A720-5B1D2C9EB794</string>
+		<string>C2273493-9219-4233-BC77-5228687FFB58</string>
+		<string>68B3BF36-CDFA-4AD1-A74A-2C5534F5B95C</string>
+	</array>
+	<key>name</key>
+	<string>Snake Texture</string>
+</dict>
+</plist>

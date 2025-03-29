@@ -1,0 +1,5 @@
+numpy
+scipy
+Pillow
+moviepy
+https://github.com/RaSan147/moviepy/archive/df00ecbf80e42e3e0158a4c5f6c4a624aed76512.zip

@@ -1,0 +1,228 @@
+*
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  box-sizing: border-box
+  line-height: 1.5em
+
+p, ul, pre
+  font-size: 1.2rem
+
+p, ul
+  margin-top: 0
+  margin-bottom 1em
+
+ul
+  padding-left: 1em
+  page-break-inside avoid
+
+a, .date
+  padding: 0 0.2em
+
+a
+  text-decoration: none
+  background: lighten(dodgerblue,90%)
+  color: dodgerblue
+  &:visited
+    color: darken(dodgerblue,20%)
+  &:hover
+    background: desaturate(lighten(dodgerblue,80%),10%)
+  code
+    display: inline
+    background: none
+    color: inherit
+    border: none
+
+code, code span
+  font-family: Menlo, Consolas, monospace
+  font-size: 0.9em
+
+code
+  display: inline-block
+  padding: 0 0.1em
+  background: #eee
+  color: #444
+  break-inside: avoid
+  page-break-inside: avoid
+  &.sourceCode
+    padding: 0.4em
+    display: block
+
+#main
+  position: relative
+  min-width: 20em
+  margin: 2em auto
+  max-width: 70em
+  padding: 0 2em
+  img
+    max-width: 100%
+
+#header
+  h1
+    margin-bottom: 0.2em
+    span.lighten
+      font-weight 400
+      //font-style italic
+      //padding-left 0.3em
+  margin-bottom: 2em
+
+.date
+  font-style: italic
+  background-color: #eee
+
+.quick-links
+  list-style: none
+  padding-left: 0
+  display: flex
+  flex-direction row
+  flex-wrap: wrap
+  margin -0.25em
+  margin-bottom 1em
+  justify-content: center
+  li a
+    display block
+    padding 0.5em 0.8em
+  li
+    display block
+    margin 0.25em
+
+@media screen and (min-width: 920px)
+  #leader
+    display flex
+    flex-direction row
+  .quick-links
+    flex-shrink 1
+    flex-direction column
+    justify-content: flex-start
+    li a
+      width inherit
+
+  cr = 4px solid #eee
+  cg = 3em
+  section.main
+    text-align: justify
+    -webkit-column-count: 2 /* Chrome, Safari, Opera */
+    -moz-column-count: 2 /* Firefox */
+    column-count: 2
+    -webkit-column-gap: cg; /* Chrome, Safari, Opera */
+    -moz-column-gap: cg; /* Firefox */
+    column-gap: cg;
+    p,ul,pre
+      margin-bottom: 0
+      border-bottom: solid 1em transparent
+// Columns
+p
+  margin-top 0
+
+p, ul
+  break-inside: avoid
+
+h2
+  margin-top 2em
+
+
+figure
+  max-width: 40em
+  margin: 0 auto
+  figcaption
+    margin-top: 0.2em
+    font-style: italic
+    font-size: 1em
+    color: #888
+    margin-bottom 1em
+  img
+    border: 3px solid black
+
+.section
+  position: relative
+  p.series
+    margin-top: 0
+    position: absolute
+    top: 0
+    right: 0
+    font-size: 1.5em
+    font-weight: 300
+
+.asset-container
+  flex-flow: row wrap
+  display: flex
+  justify-content: space-between
+  margin: 0em -0.5em
+
+.asset-catalog
+  flex-flow: row wrap
+  display: flex
+  margin: 0.5em 0em
+  &.collapse
+    margin: 0
+
+.asset
+  margin: 0.5em
+  h4
+    margin-top: 0
+    font-size: 0.8em
+    margin-bottom: 0.1em
+    margin-right: 0.5em
+  .swatch
+    width: 100px
+    height: 100px
+    border: 2px solid black
+  .info *
+    display: inline
+  &.annotated
+    width: 140px
+    .swatch
+      width: 140px
+    p.note
+      font-size: 0.8em
+      margin: 0
+      flex-grow: 1
+
+#pattern-reference
+  h1, p.series
+    text-transform: uppercase
+  div.info
+    display flex
+    flex-direction row
+    align-items: baseline;
+    p.note
+      line-height: 1em
+      flex-grow 1
+
+ul#contents
+  display: flex
+  flex-flow: row wrap
+  padding: 0
+  list-style: none
+  margin: 0 -0.3em
+  li a
+    display: block
+    border-radius: 0
+    margin: 0.2em 0.3em
+
+@font-face {
+  font-family: 'symbol-font';
+  src:  url('fonts/symbol-font.eot?o23mgi');
+  src:  url('fonts/symbol-font.eot?o23mgi#iefix') format('embedded-opentype'),
+    url('fonts/symbol-font.ttf?o23mgi') format('truetype'),
+    url('fonts/symbol-font.woff?o23mgi') format('woff'),
+    url('fonts/symbol-font.svg?o23mgi#symbol-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'symbol-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "\eab0";
+}

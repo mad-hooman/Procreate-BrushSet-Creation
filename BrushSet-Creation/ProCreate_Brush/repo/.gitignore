@@ -1,0 +1,8 @@
+FGDCgeostdTM11A2_PattCh.ai
+node_modules
+doc/dist
+*.zip
+procreate-brushes/build
+assets/png-uncompressed/*.png
+.idea
+package-lock.json
